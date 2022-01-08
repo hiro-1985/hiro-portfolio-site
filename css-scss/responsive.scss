@@ -1,0 +1,345 @@
+@use 'variables-mixin' as vm;
+
+html {
+  font-size: 50%;
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    &__btn__area {
+      display: none;
+    }
+    &__menu__button {
+      display: block;
+      transition: .3s;
+    }
+    &__menu__button:hover {
+      opacity: .8;
+    }
+  }
+
+  .slider {
+    width: 100%;
+    height: 100vh;
+    & &-slide  &-slide-content {
+      width: 60%;
+    }
+  }
+
+
+  .profile {
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    padding: 12rem 1rem 10rem 1rem;
+    &__title__area {
+      margin-bottom: 15rem;
+    }
+  }
+
+  .work {
+    &__inner {
+      width: 90%;
+    }
+    &__contents {
+      width: 100%;
+      height: auto;
+      padding: 2% 5%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    &__contents__area {
+      height: 65vh;
+    }
+    &__contents__area:not(:last-of-type) {
+      margin-bottom: 10%;
+    }
+    &__contents__back:last-of-type {
+      justify-content: center;
+    }
+    &__contents__title:last-of-type {
+      margin-bottom: 3%;
+    }
+    &__contents__image__front {
+      height: 65vh;
+      background-size: center center;
+    }
+    &__contents__back {
+      height: 65vh;
+    }
+    &__contents__description:last-of-type {
+      margin-top: 3%;
+    }
+    &__contents__description {
+      width: 65%;
+    }
+  }
+
+  .skill {
+    &__area:last-of-type {
+      margin-bottom: 10rem;
+    }
+    &__title__area {
+      margin-bottom: 13rem;
+    }
+    &__contents__title {
+      font-size: clamp(3.2rem, 4vw, 4.8rem);
+    }
+    &__area:nth-of-type(odd) > &__text__area > &__contents__title {
+      text-align: left;
+    }
+    &__area:nth-of-type(even) > &__text__area > &__contents__title {
+      text-align: right;
+    }
+    
+  }
+
+  .contact {
+    &__title__area {
+      margin-bottom: 13rem;
+    }
+  }
+
+  .form__required {
+    font-size: 1.2rem;
+  }
+
+  .form__alert {
+    font-size: 1.4rem;
+  }
+
+  .sns__text {
+    margin-bottom: 6rem;
+  }
+}
+
+
+
+@media screen and (max-width: 769px) {
+  .header {
+    height: 65px;
+    &__inner {
+      height: 65px;
+      padding: 0 2rem;
+    }
+    &__logo {
+      width: 115px;
+      height: 65px;
+    }
+  }
+
+  .slider {
+    &-wrapper {
+      width: 100%;
+      height: 100vh;
+    }
+    &-wrapper &-slide.slide1 {
+      background-image: url(../images/firstview-lake-sp-05.jpg);
+      background-position: right bottom;
+    }
+  }
+
+
+  .profile {
+    background-size: 275%;
+    background-position: 0 0;
+    height: 90vh;
+    padding: 10rem 0;
+    &__title {
+      font-size: 3.6rem;
+    }
+    &__title__area {
+      margin-bottom: 8rem;
+    }
+  }
+
+  .self-intro {
+    grid-template-columns: 30%;
+    padding: 8% 1% 13% 1%;
+    row-gap: 15%;
+    &__photo__area {
+      justify-self: center;
+      align-self: center;
+      width: 90%;
+    }
+    &__image {
+      width: 90%;
+    }
+    &__text__area {
+      justify-self: center;
+      align-self: center;
+      width: 100%;
+      padding: 0 3%;
+    }
+    &__greeting__area {
+      width: 90%;
+      justify-self: center;
+    }
+  }
+
+  .work {
+    &__inner {
+      width: 90%;
+    }
+    &__image1 {
+      background-image: url(../images/portfolio01_stylish_site_sp.png);
+    }
+    &__image2 {
+      background-image: url(../images/portfolio02_corpolate_site_sp.png);
+    }
+    &__image3 {
+      background-image: url(../images/portfolio03_your_coding_sp.png);
+    }
+    &__contents__area,
+    &__contents__image__front,
+    &__contents__back {
+      height: 75vh;
+    }
+    &__contents__image__front {
+      background-position: center;
+    }
+  }
+
+
+  .skill {
+    padding-bottom: 5rem;
+    &__area {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15rem;
+    }
+    &__area:last-of-type {
+      margin-bottom: 10rem;
+    }
+    &__area:nth-child(odd) {
+      flex-direction: column;
+    }
+    &__contents__title__sp {
+      display: block;
+      font-family: vm.$font-family-no;
+      font-size: clamp(3.6rem, 3vh, 4.8rem);
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10%;
+    }
+    &__area:last-of-type &__contents__title__sp {
+      opacity: .3;
+    }
+    &__photo__area {
+      width: 85%;
+      margin: 0 auto;
+      z-index: 2;
+    }
+    &__photo {
+      width: 80%;
+      display: inline;
+      z-index: 2;
+      box-shadow: -3px -3px 10px 1px #a8a8a8,
+                  3px 3px 10px 1px #a8a8a8;
+    }
+    &__inner > &__area:nth-of-type(2n-1) &__photo__area > &__photo {
+      box-shadow: -3px -3px 10px 1px #a8a8a8,
+                  3px 3px 10px 1px #a8a8a8;
+    }
+    &__photo__text {
+      position: absolute;
+      bottom: 17%;
+      right: 12%;
+      font-size: 1.5rem;
+    }
+    &__text__area {
+      width: 65%;
+      background-color: #3c3c3c;
+      opacity: .8;
+      backdrop-filter: blur(10px);
+      color: #fff;
+      border-radius: 20px;
+      margin-top: -2.5rem;
+    }
+    &__inner > &__area:nth-of-type(2n) > &__text__area {
+      margin-left: 0;
+    }
+    &__inner > &__area:nth-of-type(2n-1) > &__text__area {
+      margin-right: 0;
+    }
+    &__contents__title {
+      font-size: clamp(2.8rem, 3vw, 4rem);
+      width: 100%;
+      margin: 1rem 0 2rem 0;
+      display: none;
+    }
+    &__area:nth-of-type(odd) > &__text__area > &__contents__title {
+      text-align: center;
+    }
+    &__area:nth-of-type(even) > &__text__area > &__contents__title {
+      text-align: center;
+    }
+     &__text-box {
+      backdrop-filter: blur(10px);
+      padding: 2rem 1.5rem;
+      opacity: 1;
+    }
+  }
+  .form {
+    width: 100%;
+    &__area {
+      padding: 20% 2%;
+      width: 90%;
+    }
+    &__required {
+      font-size: 1rem;
+    }
+    &__alert {
+      display: block;
+      font-size: 1.2rem;
+    }
+    &__input__area {
+      width: 60%;
+    }
+    &__textarea__area {
+      width: 100%;
+    }
+  }
+  .sns__text {
+    margin-bottom: 6rem;
+  }
+  .profile__title::before,
+  .work__title::before,
+  .skill__title::before,
+  .contact__title::before {
+    font-size: 7rem;
+  }
+}
+
+// iPhoneXなど375px以下
+@media screen and (max-width: 376px) {
+  .profile {
+    height: 105vh;
+  }
+
+  .work {
+    &__inner {
+      width: 100%;
+    }
+  }
+  .self-intro {
+    padding-bottom: 17%;
+  }
+  .sns__text {
+    margin-bottom: 6rem;
+  }
+  .form {
+    &__submit__outer {
+      width: 220px;
+      height: 50px;
+    }
+    &__submit__outer &__submit {
+      height: 40px;
+      width: 215px;
+    }
+  }
+}

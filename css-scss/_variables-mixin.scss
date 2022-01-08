@@ -1,0 +1,61 @@
+
+$font-family-fr: 'Fredericka the Great', cursive;    //セクションタイトル背景英字
+$font-family-ki: 'Kiwi Maru', serif;                 //セクションタイトル
+$font-family-no: 'Noto Sans JP', sans-serif;      //本文、説明文
+$font-family-ze: 'Zen Maru Gothic', sans-serif;      //プロフィールのタイトル
+
+//変数
+$header-font-color: #fff;
+$text-color: #626262;
+$text-color-skill: #fff;
+$bg-color: #FAF9F5;
+
+
+
+//mixin
+@mixin section-title {
+  font-family: 'Kiwi Maru', serif;
+  font-size: 4.8rem;
+  color: #626262;
+}
+
+@mixin section-title-en {
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 8.2rem;
+  color: rgba(255, 119, 244, .2);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin title-area {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+
+@mixin slider-content {
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: clamp(2.4rem, 3vw, 3.6rem);
+}
+
+@mixin work-contents-shadow {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 8px;
+  box-shadow: 0 40px 15px rgba(0, 0, 0, .5);
+  background-color: transparent;
+  border-radius: 80px / 4px;
+}
+

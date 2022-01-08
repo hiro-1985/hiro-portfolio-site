@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="斎藤弘高と申します。初めてのポートフォリオサイトを作成しました。">
+  <!-- OGP↓ -->
+  <meta property="og:title" content="hiro's portfolio">
+  <meta property="og:description" content="斎藤弘高と申します。初めてのポートフォリオサイトを作成しました。見て頂けると嬉しいです(^^)">
+  <meta property="og:url" content="ページのURL">
+  <meta property="og:image" content="サムネイル画像のURL">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="hiro's portfolio">
+  <meta name="twitter:card" content="summary_large_image"> 
+  <meta name="twitter:site" content="@bass_angler1985">
+  <!-- リセットcss↓ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <!-- google fonts↓ -->
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Kiwi+Maru:wght@500&family=Noto+Sans+JP&family=Sawarabi+Mincho&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+  <!-- FontAwesome↓ -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- jQueryプラグイン（スライダー） -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+  <!-- 各css↓ -->
+  <link rel="stylesheet" href="css-scss/style.css">
+  <link rel="stylesheet" href="css-scss/responsive.css">
+  <title>hiro's portfolio</title>
+</head>
+<body>
+
+  <div id="splash">
+    <div id="splash_text"></div>
+  </div>
+    
+  <header class="header" id="header">
+    <div class="header__inner">
+      <figure class="header__logo__area">
+        <a href="" class="header__logo__link"><img src="images/HIRO's.png" alt="ロゴ" class="header__logo"></a>
+      </figure>
+      <nav class="header__nav">
+        <ul class="header__nav__list">
+          <li class="header__nav__item"><a href="#section1" class="header__nav__link">プロフィール</a></li>
+          <li class="header__nav__item"><a href="#section2" class="header__nav__link">作品</a></li>
+          <li class="header__nav__item"><a href="#section3" class="header__nav__link">スキル</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn__area">
+        <div class="header__outer">
+          <a href="#section4" class="header__button">お問い合わせ</a>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <button class="header__menu__button"><i class="fas fa-bars header__menu__bar"></i></button>
+      <button class="header__delete__button"><i class="fas fa-times header__delete__icon"></i></button>
+    </div>
+  </header>
+
+
+  <div class="modal">
+   <div class="modal__overlay">
+      <div class="modal__inner">
+        <div class="modal__title__area">
+          <p class="modal__title">MENU</p>
+          <button class="modal__delete__button"><i class="fas fa-times modal__delete__icon"></i></button>
+        </div>
+        <ul class="modal__list">
+          <a href="#section1" class="modal__list__link"><li class="modal__list__item">プロフィール</li></a>
+          <a href="#section2" class="modal__list__link"><li class="modal__list__item">作品</li></a>
+          <a href="#section3" class="modal__list__link"><li class="modal__list__item">スキル</li></a>
+          <a href="#section4" class="modal__list__link"><li class="modal__list__item">お問い合わせ</li></a>
+        </ul><!-- /.modal__list -->
+        <div class="modal__sns__area">
+          <a href="https://twitter.com/bass_angler1985" class="modal__sns__link" target="_blank"><i class="fab fa-twitter-square modal__sns__icon fa-fw"></i></a>
+          <a href="mailto:ten_feet_under&#64;icloud.com" class="modal__sns__link"><i class="far fa-envelope modal__sns__icon fa-fw"></i></a>
+        </div><!-- /.modal__sns__area -->
+      </div><!-- /.inner -->
+    </div><!-- /.modal__overlay -->
+  </div><!-- /.modal -->
+
+
+  <main class="main">
+      <div class="slider" id="slider">
+        <div class="slider-wrapper">
+          <!-- Slides -->
+          <div class="slider-slide slide1">
+            <div class="slider-slide-content slider-slide-content-1">あああああ</div>
+          </div>
+          <div class="slider-slide slide2">
+            <div class="slider-slide-content slider-slide-content-2">あああああ</div>
+          </div>
+          <div class="slider-slide slide3">
+            <div class="slider-slide-content slider-slide-content-3">あああああ</div>
+          </div>
+          <div class="slider-slide slide4">
+            <div class="slider-slide-content slider-slide-content-4">あああああ</div>
+          </div>
+        </div>
+      </div>
+
+
+    <section class="profile" id="section1">
+      <div class="profile__inner js-fade">
+        <div class="profile__title__area">
+          <h3 class="profile__title">プロフィール</h3>
+        </div>
+        <div class="self-intro">
+          <figure class="self-intro__photo__area">
+            <img src="images/photo-self.png" alt="斎藤弘高の画像" class="self-intro__image">
+          </figure>
+          <div class="self-intro__text__area">
+            <p class="self-intro__title">〜&emsp; 私について&emsp; 〜</p>
+            <dl class="self-intro__dl">
+              <dt class="self-intro__dt">名前&ensp;:</dt>
+              <dd class="self-intro__dd">斎藤&emsp;弘高</dd>
+              <dt class="self-intro__dt">出身&ensp;:</dt>
+              <dd class="self-intro__dd">福島県須賀川市</dd>
+              <dt class="self-intro__dt">生年月日&ensp;:</dt>
+              <dd class="self-intro__dd">1985年10月15日</dd>
+              <dt class="self-intro__dt">現職業&ensp;:</dt>
+              <dd class="self-intro__dd">鉄骨製作業</dd>
+              <dt class="self-intro__dt">趣味&ensp;:</dt>
+              <dd class="self-intro__dd">釣り、読書、スノーボード、<br>お笑い視聴(東京03推し)</dd>
+            </dl>
+          </div><!-- /.self-intro__text__area -->
+          <div class="self-intro__greeting__area">
+            <p class="self-intro__greeting__title">\&emsp;ごあいさつ&emsp;/</p>
+            <p class="self-intro__greeting">
+              私のポートフォリオをご覧いただきありがとうございます。
+              本業の傍ら、別のスキルを身に付け副業で活かしたく
+              プログラミング(Web制作)の独学を一年半以上続けてまいりました。
+              人の気持ちに寄り添い、親切丁寧な仕事が出来ると思っています。
+              よろしくお願い致します。
+            </p><!-- /.self-intro__greeting -->
+          </div><!-- /.self-intro__greeting__area -->
+        </div><!-- /.self-intro -->
+      </div><!-- /.profile__inner -->
+    </section><!-- /.profile -->
+
+
+    <section class="work" id="section2">
+      <div class="work__inner">
+        <div class="work__title__area">
+          <h3 class="work__title">作品</h3>
+        </div>
+        <div class="work__contents">
+          <div class="work__contents__area js-fade">
+            <figure class="work__contents__image__front work__image1"></figure>
+            <div class="work__contents__back">
+              <h3 class="work__contents__title">stylish site</h3>
+              <p class="work__contents__description">
+                こちらのサイトはProgateやドットインストールが終わったタイミングで作成した模写となります。
+                今思うのは初めての模写にしては少しハードルが高過ぎるなと思います笑
+              </p>
+              <a href="https://hiro-1985.github.io/portforio01_stylish_site/" class="work__contents__link">サイトへ<i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work__contents__area js-fade">
+            <figure class="work__contents__image__front work__image2"></figure>
+            <div class="work__contents__back">
+              <h3 class="work__contents__title">corporate site</h3>
+              <p class="work__contents__description">
+                こちらはページ数が7ページのコーポレートサイトになります。
+                youtubeの埋め込みやセクションの区切りを斜めにするなど、
+                こちらも時間はかかりましたがとても勉強になりました。
+              </p>
+              <a href="https://hiro-1985.github.io/portfolio02_corpolate_site/" class="work__contents__link">
+                サイトへ<i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work__contents__area js-fade">
+            <figure class="work__contents__image__front work__image3"></figure>
+            <div class="work__contents__back">
+              <h3 class="work__contents__title">your coding</h3>
+              <p class="work__contents__description">
+                こちらのサイトでは初めてコンタクトフォームとGoogleフォームを紐づける作業をし、
+                項目を埋めて送信しますと実際に私のフォームへ受信されます。
+                また、レンタルサーバーを契約しネット上にアップしたのもこのサイトが初めてです。
+              </p>
+              <a href="https://hiro-1985.github.io/portforio03_your_coding/" class="work__contents__link">
+                サイトへ<i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work__contents__area js-fade">
+            <figure class="work__contents__image__front work__image4"></figure>
+            <div class="work__contents__back">
+              <h3 class="work__contents__title">hiro's portfolio</h3>
+              <p class="work__contents__description">
+                当サイトになります。
+                今まで学んだことをなるべく詰め込んだ第一号のポートフォリオサイトになります。
+                このサイトではGitを使用し、GitHubへフォルダをアップするという作業と、
+                デザインも難しくメンターさんに相談しながら作成しました。
+              </p>
+            </div>
+          </div>
+        </div><!-- /.work__contents -->
+      </div><!-- /.work__inner -->
+    </section><!-- /.work -->
+
+
+    <section class="skill" id="section3">
+      <div class="skill__inner">
+        <div class="skill__title__area">
+          <h3 class="skill__title js-fade">スキル</h3>
+        </div>
+
+        <div class="skill__area js-fade">
+          <p class="skill__contents__title__sp">HTML/CSS</p>
+          <figure class="skill__photo__area">
+            <img src="images/skill-html-01.jpg" alt="HTML画像" class="skill__photo">
+          </figure>
+          <div class="skill__text__area">
+            <p class="skill__contents__title">HTML/CSS</p>
+            <div class="skill__text-box">
+              <p class="skill__text">
+                html,cssは一番学習に時間をかけました。
+                デザインを構造的に捉え、またcss設計の
+                観点からBEM記法を採用しています。
+                これにより第三者がコードを見ても読みやすく、
+                カスタマイズしやすいかと思います。
+              </p><!-- /.skill__text -->
+            </div><!-- /.skill__text-box -->
+          </div><!-- /.skill__text__area -->
+        </div><!-- /.skill__area -->
+
+        <div class="skill__area js-fade">
+          <p class="skill__contents__title__sp">Scss</p>
+          <figure class="skill__photo__area">
+            <img src="images/skill-scss-02.jpg" alt="scss画像" class="skill__photo">
+          </figure>
+          <div class="skill__text__area">
+            <p class="skill__contents__title">Scss</p>
+            <div class="skill__text-box">
+              <p class="skill__text">
+                Scssの基本的な使い方であるネスト、
+                変数、mixinを活用して効率的なコーディング
+                が出来ます。
+              </p><!-- /.skill__text -->
+            </div><!-- /.skill__text-box -->
+          </div><!-- /.skill__text__area -->
+        </div><!-- /.skill__area -->
+
+        <div class="skill__area js-fade">
+          <p class="skill__contents__title__sp">jquery</p>
+          <figure class="skill__photo__area">
+            <img src="images/skill-jquery-03.jpg" alt="jquery画像" class="skill__photo">
+          </figure>
+          <div class="skill__text__area">
+            <p class="skill__contents__title">jquery</p>
+            <div class="skill__text-box">
+              <p class="skill__text">
+                Web制作で頻出のアニメーションは、
+                ほぼ自分でコーディングかプラグインの
+                活用で実装可能です。
+              </p><!-- /.skill__text -->
+            </div><!-- /.skill__text-box -->
+          </div><!-- /.skill__text__area -->
+        </div><!-- /.skill__area -->
+
+        <div class="skill__area js-fade">
+          <p class="skill__contents__title__sp">WordPress</p>
+          <figure class="skill__photo__area">
+            <img src="images/photo06.jpg" alt="wordpress画像" class="skill__photo">
+            <p class="skill__photo__text">coming soon…</p>
+          </figure>
+          <div class="skill__text__area">
+            <p class="skill__contents__title">WordPress</p>
+            <div class="skill__text-box">
+              <p class="skill__text">
+                現在学習中です…m(_ _)m
+              </p><!-- /.skill__text -->
+            </div><!-- /.skill__text-box -->
+          </div><!-- /.skill__text__area -->
+        </div><!-- /.skill__area -->
+      </div><!-- /.skill__inner -->
+    </section><!-- /.skill -->
+
+    
+    <section class="contact" id="section4">
+      <div class="contact__inner">
+        <div class="contact__title__area">
+          <h3 class="contact__title js-fade">お問い合わせ</h3>
+        </div>
+
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe33fiFiL_yw4IP0zh-D4v_LUIi5aMGg66WKfjnb80qb4_FLg/formResponse" name="contact" method="POST" class="form js-fade" id="form" target="my-response-iframe">
+          <div class="form__area">
+            <div class="form__box">
+              <div class="form__input__area" id="form__name__area">
+                <input type="text" name="entry.1294117975" id="name" class="form__input" value="" required>
+                <label class="form__user" for="name">お名前<span class="form__required">❇︎</span><span class="form__alert">お名前のご記入をお願いします!</span></label>
+              </div> 
+            </div>
+
+            <div class="form__box">
+              <div class="form__input__area" id="form__address__area">
+                <input type="email" name="entry.324245145" id="address" class="form__input" value="" required>
+                <label class="form__user" for="address">メールアドレス<span class="form__required">❇︎</span><span class="form__alert">メールアドレスのご記入をお願いします!</span></label>
+              </div> 
+            </div>
+
+            <div class="form__box">
+              <div class="form__textarea__area" id="form__textarea__area">
+                <textarea name="entry.809664761" id="textarea" class="form__textarea" value="" placeholder="ご自由にご記入ください" required></textarea>
+                <label class="form__user textarea"  for="textarea">お問い合わせ<span class="form__required">❇︎</span><span class="form__alert">お問い合わせ内容のご記入をお願いします!</span></label>
+              </div>
+            </div>
+
+            <div class="form__submit__area">
+              <div class="form__submit__outer">
+                <input type="submit" value="送信" class="form__submit" id="js-submit">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <p class="end-message">お問い合わせいただき、ありがとうございまた！</p>
+            <p class="false-message">送信に失敗しました。。</p>
+            <div class="sns">
+              <p class="sns__text">
+                またはこちらからでもお問い合わせください。
+              </p>
+              <div class="sns__area">
+                <a href="https://twitter.com/bass_angler1985" class="sns__icon__link" target="_blank"><i class="fab fa-twitter-square sns__icon fa-fw"></i></a>
+                <a href="mailto:ten_feet_under&#64;icloud.com" class="sns__icon__link"><i class="far fa-envelope sns__icon fa-fw"></i></a>
+              </div><!-- /.sns__area -->
+            </div><!-- /.sns -->
+          </div><!-- /.form__area -->
+        </form><!-- /.form -->
+
+        <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
+
+        <script type="text/javascript">
+          document.getElementById('form').target = 'my-response-iframe';
+          var iframe = document.getElementById('my-response-iframe');
+          if (iframe) {
+              iframe.onload = function () {
+                  $(".end-message").slideDown();
+                  $(".form__submit__outer").fadeOut();
+              } 
+          }
+        </script>
+
+        <div class="page-top-area">
+          <a id="page-top" href="" class="icon js-fade"><i class="fas fa-chevron-circle-up"></i></a>
+        </div><!-- /.page-top-area -->
+      </div><!-- /.contact__inner -->
+    </section><!-- /.contact -->
+  </main><!-- /.main -->
+
+  
+  <footer class="footer">
+    <div class="footer__text__area">
+      <small class="footer__copyright">©︎2022&emsp;HIRO's portforio</small>
+    </div><!-- /.footer__text__area -->
+  </footer><!-- /.footer -->
+  
+
+
+  <!-- jQuery↓ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- jQueryプラグイン（スライダー）↓ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+  <!-- jQueryプラグイン（ローディング画面）↓ -->
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
+  <!-- jQueryプラグイン（スクロール時の表示）↓ -->
+  <script src="./js/jquery.inview.min.js"></script>
+  <!-- jsファイルの読み込み↓ -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
