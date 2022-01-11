@@ -271,6 +271,27 @@ body {
   -webkit-transition: all 3s ease 0s;
   transition: all 3s ease 0s;
 }
+.slider-slide-content span {
+  display: inline-block;
+  -webkit-animation: texts-animate 3s backwards;
+          animation: texts-animate 3s backwards;
+}
+@-webkit-keyframes texts-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes texts-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .modal__overlay {
   position: fixed;

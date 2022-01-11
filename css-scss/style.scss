@@ -196,6 +196,7 @@ color: #626262;
   height: 100vh;
 }
 
+
 .slider {
   position: relative;
   &-wrapper {
@@ -211,6 +212,18 @@ color: #626262;
     transform: translate(-50%, -50%);
     @include vm.slider-content();
     transition: all 3s ease 0s;
+  }
+  &-slide-content span {
+    display: inline-block;
+    animation: texts-animate 3s backwards;
+  }
+  @keyframes texts-animate {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 

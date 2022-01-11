@@ -45,6 +45,23 @@ $(window).on('scroll',function(){
     startPos = winScrollTop;
 });
 
+// テキストアニメーション⬇️
+const textAnimation = document.querySelectorAll(".slider-slide-content")
+for (let i = 0; i < textAnimation.length; i++) {
+  const targetElement = textAnimation[i],
+        texts = targetElement.textContent,
+        textsArray = [];
+
+  targetElement.textContent = "";
+  
+  for (let j = 0; j < texts.split(" ").length; j++) {
+    textsArray.push('<span style= "animation-delay: ' + (j * .1) + 's;">' + texts.split(" ")[j] + '</span>')
+  }
+  for (let k = 0; k < textsArray.length; k++) {
+    targetElement.innerHTML+= textsArray[k];
+  }
+}
+
 
 // スライダー実装（動くWebデザインアイディア帳より参考⬇️）
 var windowwidth = window.innerWidth || document.documentElement.clientWidth || 0;
