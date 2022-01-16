@@ -215,7 +215,7 @@ body {
             filter: hue-rotate(360deg);
   }
 }
-.header__menu__button, .header__delete__button {
+.header__menu__button {
   position: absolute;
   top: 25%;
   right: 5%;
@@ -248,7 +248,7 @@ body {
 }
 .slider .slider-slide .slider-slide-content {
   position: absolute;
-  width: 40%;
+  width: 60%;
   height: 10%;
   top: 50%;
   left: 50%;
@@ -268,29 +268,12 @@ body {
           justify-content: center;
   color: #fff;
   font-size: clamp(2.4rem, 3vw, 3.6rem);
+  letter-spacing: 0.07em;
+  line-height: 1.5;
+  pointer-events: none;
   -webkit-transition: all 3s ease 0s;
   transition: all 3s ease 0s;
-}
-.slider-slide-content span {
-  display: inline-block;
-  -webkit-animation: texts-animate 3s backwards;
-          animation: texts-animate 3s backwards;
-}
-@-webkit-keyframes texts-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes texts-animate {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  padding: 5px;
 }
 
 .modal__overlay {
@@ -323,17 +306,16 @@ body {
 }
 .modal__delete__button {
   background: none;
-  position: absolute;
-  top: 0;
-  right: 0;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
 }
 .modal__delete__icon {
   font-size: clamp(2.4rem, 3vw, 3.2rem);
   background: none;
   color: #FAF9F5;
+}
+.modal__delete__icon:hover {
+  color: rgba(250, 249, 245, 0.7);
 }
 .modal__list {
   margin-bottom: 7rem;
@@ -350,7 +332,9 @@ body {
   transition: all 0.3s ease;
 }
 .modal__list__item:hover {
-  color: rgba(250, 249, 245, 0.7);
+  color: #eca7b1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .modal__sns__area {
   text-align: center;
@@ -368,7 +352,7 @@ body {
   transition: all 0.3s ease;
 }
 .modal__sns__icon:hover {
-  color: rgba(250, 249, 245, 0.7);
+  color: #eca7b1;
 }
 
 .profile {
@@ -377,8 +361,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 115vh;
-  padding: 10rem 1rem;
+  padding: 15rem 0;
 }
 .profile__inner {
   width: 90%;
@@ -425,9 +408,10 @@ body {
 }
 .self-intro__photo__area {
   grid-area: photo;
-  justify-self: center;
+  justify-self: right;
   width: 50%;
   max-width: 300px;
+  margin-right: 10%;
 }
 .self-intro__image {
   width: 90%;
@@ -439,7 +423,7 @@ body {
   align-self: center;
   width: 90%;
   font-family: "Noto Sans JP", sans-serif;
-  padding: 0 6%;
+  padding: 0 10% 0 2%;
 }
 .self-intro__title {
   text-align: center;
@@ -471,7 +455,7 @@ body {
 }
 .self-intro__greeting__area {
   grid-area: greeting;
-  width: 60%;
+  width: 65%;
   justify-self: center;
   padding: 1.5rem 0;
   font-family: "Noto Sans JP", sans-serif;
@@ -480,12 +464,14 @@ body {
 .self-intro__greeting__title {
   font-size: clamp(1.4rem, 1.8vw, 2.2rem);
   font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.05em;
   margin-bottom: 2rem;
 }
 .self-intro__greeting {
   font-size: clamp(1.2rem, 1.6vw, 2rem);
   line-height: 1.6;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.05em;
 }
 
 .work {
@@ -520,36 +506,16 @@ body {
 }
 .work__contents {
   width: 100%;
-  height: 130vh;
   padding: 2% 5%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 5%;
+  grid-row-gap: 70px;
   place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-.work__contents__area {
-  position: relative;
-  width: 95%;
-  height: 50vh;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-perspective: 100%;
-          perspective: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.work__contents__area:hover .work__contents__image__front {
-  -webkit-transform: rotateX(-180deg);
-          transform: rotateX(-180deg);
-}
-.work__contents__area:hover .work__contents__back {
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
 }
 .work__image1 {
   background-image: url(../images/portfolio01_stylish_site.png);
@@ -564,79 +530,15 @@ body {
   background-image: url(../images/portfolio04_hiro_portfolio.png);
 }
 .work__contents__image__front {
-  width: 100%;
-  height: 50vh;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.work__contents__image__front::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 90%;
-  height: 8px;
-  -webkit-box-shadow: 0 40px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 40px 15px rgba(0, 0, 0, 0.5);
-  background-color: transparent;
-  border-radius: 80px/4px;
-}
-.work__contents__back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50vh;
-  background-color: #EBF5FC;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  padding: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.work__contents__back::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 90%;
-  height: 8px;
-  -webkit-box-shadow: 0 40px 15px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 40px 15px rgba(0, 0, 0, 0.5);
-  background-color: transparent;
-  border-radius: 80px/4px;
 }
 .work__contents__title, .work__contents__description {
   font-family: "Noto Sans JP", sans-serif;
   color: #626262;
+  text-align: center;
+  margin: 0 auto;
   letter-spacing: 0.05em;
   line-height: 1.6;
 }
@@ -645,11 +547,14 @@ body {
 }
 .work__contents__description {
   font-size: clamp(1.4vw, 2.2rem, 2.6vw);
+  -moz-text-align-last: left;
+       text-align-last: left;
 }
 .work__contents__link {
   display: block;
   width: 50%;
   padding: 3%;
+  margin: 0 auto;
   text-align: center;
   font-size: clamp(1.2vw, 2rem, 2.4vw);
   -webkit-transition: all 0.2s;
@@ -668,7 +573,7 @@ body {
 
 .skill {
   background-color: #FAF9F5;
-  padding: 10rem 0;
+  padding: 15rem 0;
 }
 .skill__inner {
   max-width: 1440px;
@@ -704,8 +609,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20rem;
+  margin-bottom: 15rem;
   width: 100%;
+}
+.skill__area:last-of-type {
+  margin-bottom: 0;
 }
 .skill__area:nth-child(odd) {
   -webkit-box-orient: horizontal;
@@ -785,7 +693,7 @@ body {
 .contact {
   position: relative;
   background-color: #EBF5FC;
-  padding: 12rem 0;
+  padding: 15rem 0;
 }
 .contact__inner {
   max-width: 1440px;
@@ -824,7 +732,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 8%;
+  margin-top: 10px;
 }
 
 #page-top {

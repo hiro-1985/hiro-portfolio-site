@@ -54,24 +54,23 @@
         </div>
       </div>
       <button class="header__menu__button"><i class="fas fa-bars header__menu__bar"></i></button>
-      <button class="header__delete__button"><i class="fas fa-times header__delete__icon"></i></button>
     </div>
   </header>
 
 
   <div class="modal">
    <div class="modal__overlay">
+    <button class="modal__delete__button"><i class="fas fa-times modal__delete__icon"></i></button>
       <div class="modal__inner">
         <div class="modal__title__area">
           <p class="modal__title">MENU</p>
-          <button class="modal__delete__button"><i class="fas fa-times modal__delete__icon"></i></button>
         </div>
         <ul class="modal__list">
           <a href="#section1" class="modal__list__link"><li class="modal__list__item">プロフィール</li></a>
           <a href="#section2" class="modal__list__link"><li class="modal__list__item">作品</li></a>
           <a href="#section3" class="modal__list__link"><li class="modal__list__item">スキル</li></a>
           <a href="#section4" class="modal__list__link"><li class="modal__list__item">お問い合わせ</li></a>
-        </ul><!-- /.modal__list -->
+        </ul>
         <div class="modal__sns__area">
           <a href="https://twitter.com/bass_angler1985" class="modal__sns__link" target="_blank"><i class="fab fa-twitter-square modal__sns__icon fa-fw"></i></a>
           <a href="mailto:ten_feet_under&#64;icloud.com" class="modal__sns__link"><i class="far fa-envelope modal__sns__icon fa-fw"></i></a>
@@ -86,19 +85,19 @@
         <div class="slider-wrapper">
           <!-- Slides -->
           <div class="slider-slide slide1">
-            <div class="slider-slide-content slider-slide-content-1">あああああ</div>
+            <div class="slider-slide-content slider-slide-content-1"></div>
           </div>
           <div class="slider-slide slide2">
-            <div class="slider-slide-content slider-slide-content-2">あああああ</div>
+            <div class="slider-slide-content slider-slide-content-2"></div>
           </div>
           <div class="slider-slide slide3">
-            <div class="slider-slide-content slider-slide-content-3">あああああ</div>
+            <div class="slider-slide-content slider-slide-content-3"></div>
           </div>
           <div class="slider-slide slide4">
-            <div class="slider-slide-content slider-slide-content-4">あああああ</div>
+            <div class="slider-slide-content slider-slide-content-4"></div>
           </div>
-        </div>
-      </div>
+        </div><!-- slider-wrapper -->
+      </div><!-- Slider -->
 
 
     <section class="profile" id="section1">
@@ -129,11 +128,12 @@
             <p class="self-intro__greeting__title">\&emsp;ごあいさつ&emsp;/</p>
             <p class="self-intro__greeting">
               私のポートフォリオをご覧いただきありがとうございます。
-              本業の傍ら、別のスキルを身に付け副業で活かしたく
-              プログラミング(Web制作)の独学を一年半以上続けてまいりました。
-              人の気持ちに寄り添い、親切丁寧な仕事が出来ると思っています。
+              Web制作の仕事に興味を持ち独学を2年弱継続しています。
+              学習している過程でデザインやコーディングに魅了され、
+              Web制作会社への転職を決意しました。
+              人の気持ちに寄り添い親切丁寧な仕事を心がけます。
               よろしくお願い致します。
-            </p><!-- /.self-intro__greeting -->
+            </p>
           </div><!-- /.self-intro__greeting__area -->
         </div><!-- /.self-intro -->
       </div><!-- /.profile__inner -->
@@ -154,7 +154,7 @@
                 こちらのサイトはProgateやドットインストールが終わったタイミングで作成した模写となります。
                 今思うのは初めての模写にしては少しハードルが高過ぎるなと思います笑
               </p>
-              <a href="https://hiro-1985.github.io/portforio01_stylish_site/" class="work__contents__link">サイトへ<i class="fas fa-external-link-alt"></i></a>
+              <a href="https://hiro-1985.github.io/portforio01_stylish_site/" class="work__contents__link" target="_blank">サイトへ<i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
 
@@ -167,7 +167,7 @@
                 youtubeの埋め込みやセクションの区切りを斜めにするなど、
                 こちらも時間はかかりましたがとても勉強になりました。
               </p>
-              <a href="https://hiro-1985.github.io/portfolio02--corpolate--site/" class="work__contents__link">
+              <a href="https://hiro-1985.github.io/portfolio02--corpolate--site/" class="work__contents__link" target="_blank">
                 サイトへ<i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
@@ -181,7 +181,7 @@
                 項目を埋めて送信しますと実際に私のフォームへ受信されます。
                 また、レンタルサーバーを契約しネット上にアップしたのもこのサイトが初めてです。
               </p>
-              <a href="https://hiro-1985.github.io/portforio03_your_coding/" class="work__contents__link">
+              <a href="https://hiro-1985.github.io/portforio03_your_coding/" class="work__contents__link" target="_blank">
                 サイトへ<i class="fas fa-external-link-alt"></i></a>
             </div>
           </div>
@@ -223,7 +223,7 @@
                 観点からBEM記法を採用しています。
                 これにより第三者がコードを見ても読みやすく、
                 カスタマイズしやすいかと思います。
-              </p><!-- /.skill__text -->
+              </p>
             </div><!-- /.skill__text-box -->
           </div><!-- /.skill__text__area -->
         </div><!-- /.skill__area -->
@@ -240,7 +240,7 @@
                 Scssの基本的な使い方であるネスト、
                 変数、mixinを活用して効率的なコーディング
                 が出来ます。
-              </p><!-- /.skill__text -->
+              </p>
             </div><!-- /.skill__text-box -->
           </div><!-- /.skill__text__area -->
         </div><!-- /.skill__area -->
@@ -257,7 +257,7 @@
                 Web制作で頻出のアニメーションは、
                 ほぼ自分でコーディングかプラグインの
                 活用で実装可能です。
-              </p><!-- /.skill__text -->
+              </p>
             </div><!-- /.skill__text-box -->
           </div><!-- /.skill__text__area -->
         </div><!-- /.skill__area -->
@@ -273,7 +273,7 @@
             <div class="skill__text-box">
               <p class="skill__text">
                 現在学習中です…m(_ _)m
-              </p><!-- /.skill__text -->
+              </p>
             </div><!-- /.skill__text-box -->
           </div><!-- /.skill__text__area -->
         </div><!-- /.skill__area -->
@@ -326,13 +326,13 @@
               <div class="sns__area">
                 <a href="https://twitter.com/bass_angler1985" class="sns__icon__link" target="_blank"><i class="fab fa-twitter-square sns__icon fa-fw"></i></a>
                 <a href="mailto:ten_feet_under&#64;icloud.com" class="sns__icon__link"><i class="far fa-envelope sns__icon fa-fw"></i></a>
-              </div><!-- /.sns__area -->
+              </div>
             </div><!-- /.sns -->
           </div><!-- /.form__area -->
         </form><!-- /.form -->
 
+        <!-- お問い合わせ内容送信された後の挙動⬇️ -->
         <iframe id="my-response-iframe" name="my-response-iframe"></iframe>
-
         <script type="text/javascript">
           document.getElementById('form').target = 'my-response-iframe';
           var iframe = document.getElementById('my-response-iframe');
@@ -347,7 +347,7 @@
 
         <div class="page-top-area">
           <a id="page-top" href="" class="icon js-fade"><i class="fas fa-chevron-circle-up"></i></a>
-        </div><!-- /.page-top-area -->
+        </div>
       </div><!-- /.contact__inner -->
     </section><!-- /.contact -->
   </main><!-- /.main -->

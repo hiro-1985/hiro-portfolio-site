@@ -4,6 +4,60 @@ html {
   font-size: 50%;
 }
 
+@media screen and (min-width: 1026px) {
+  .work {
+    &__contents__area {
+      position: relative;
+      width: 95%;
+      height: 40vh;
+      transform-style: preserve-3d;
+      perspective: 100%;
+      transition: .5s;
+    }
+    &__contents__area:hover &__contents__image__front {
+      transform: rotateX(-180deg);
+    }
+    &__contents__area:hover &__contents__back {
+      transform: rotateX(0deg);
+    }
+    &__contents__image__front {
+      width: 100%;
+      min-width: 450px;
+      height: 40vh;
+      min-height: 250px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      backface-visibility: hidden;
+      transform: rotateX(0deg);
+      transition: .5s;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+      &::after {
+        @include vm.work-contents-shadow();
+      }
+    }
+    &__contents__back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 50vh;
+      background-color: #EBF5FC;
+      backface-visibility: hidden;
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: rotateX(180deg);
+      transition: .5s;
+      box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+      &::after {
+        @include vm.work-contents-shadow();
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .header {
     &__nav {
@@ -21,6 +75,17 @@ html {
     }
   }
 
+  .modal {
+    &__delete__button {
+      position: absolute;
+      top: 3%;
+      right: 6%;
+    }
+    &__delete__icon {
+      font-size: 35px;
+    }
+  }
+
   .slider {
     width: 100%;
     height: 100vh;
@@ -33,56 +98,61 @@ html {
   .profile {
     background-size: cover;
     background-position: center center;
-    height: 75vh;
-    padding: 12rem 1rem 10rem 1rem;
     &__title__area {
-      margin-bottom: 15rem;
+      margin-bottom: 13rem;
     }
   }
 
   .work {
+    padding-bottom: 0;
     &__inner {
       width: 90%;
     }
     &__contents {
+      grid-template-columns: 1fr;
+    }
+    &__title__area {
+      margin-bottom: 13rem;
+    }
+    &__contents__image__front {
+      width: 100%;
+      height: 30vh;
+      @include vm.background();
+    }
+    &__contents__back {
       width: 100%;
       height: auto;
-      padding: 2% 5%;
       margin: 0 auto;
-      display: flex;
-      flex-direction: column;
     }
-    &__contents__area {
-      height: 65vh;
+    &__image1 {
+      background-image: url(../images/portfolio01_stylish_site_sp.png);
+    }
+    &__image2 {
+      background-image: url(../images/portfolio02_corpolate_site_sp.png);
+      height: 25vh;
+    }
+    &__image3 {
+      background-image: url(../images/portfolio03_your_coding_sp.png);
+      height: 26vh;
+    }
+    &__image4 {
+      background-image: url(../images/portfolio04_hiro-portfolio_sp.png);
     }
     &__contents__area:not(:last-of-type) {
       margin-bottom: 10%;
     }
-    &__contents__back:last-of-type {
-      justify-content: center;
-    }
-    &__contents__title:last-of-type {
-      margin-bottom: 3%;
-    }
-    &__contents__image__front {
-      height: 65vh;
-      background-size: center center;
-    }
-    &__contents__back {
-      height: 65vh;
+    &__contents__title {
+      margin: 3% 0;
     }
     &__contents__description:last-of-type {
       margin-top: 3%;
     }
     &__contents__description {
-      width: 65%;
+      width: 80%;
     }
   }
 
   .skill {
-    &__area:last-of-type {
-      margin-bottom: 10rem;
-    }
     &__title__area {
       margin-bottom: 13rem;
     }
@@ -141,33 +211,40 @@ html {
       background-image: url(../images/firstview-lake-sp-05.jpg);
       background-position: right bottom;
     }
+    & &-slide  &-slide-content {
+      width: 85%;
+    }
   }
 
 
   .profile {
     background-size: 275%;
     background-position: 0 0;
-    height: 90vh;
-    padding: 10rem 0;
+    padding: 12rem 0;
     &__title {
       font-size: 3.6rem;
     }
     &__title__area {
-      margin-bottom: 8rem;
+      margin-bottom: 10rem;
     }
   }
 
   .self-intro {
-    grid-template-columns: 30%;
-    padding: 8% 1% 13% 1%;
-    row-gap: 15%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "text"
+    "photo"
+    "greeting";
+    padding: 15% 0;
+    row-gap: 5%;
     &__photo__area {
       justify-self: center;
       align-self: center;
-      width: 90%;
+      width: 35%;
+      margin-right: 0;
     }
     &__image {
-      width: 90%;
+      width: 100%;
     }
     &__text__area {
       justify-self: center;
@@ -176,43 +253,39 @@ html {
       padding: 0 3%;
     }
     &__greeting__area {
-      width: 90%;
+      width: 75%;
       justify-self: center;
+    }
+    &__dt {
+      width: 50%;
+      text-align: right;
+      padding-right: 5%;
+    }
+    &__dd {
+      width: 50%;
+      padding-left: 2%;
     }
   }
 
   .work {
+    padding: 12rem 0 0 0;
     &__inner {
       width: 90%;
     }
-    &__image1 {
-      background-image: url(../images/portfolio01_stylish_site_sp.png);
-    }
-    &__image2 {
-      background-image: url(../images/portfolio02_corpolate_site_sp.png);
-    }
-    &__image3 {
-      background-image: url(../images/portfolio03_your_coding_sp.png);
-    }
-    &__contents__area,
-    &__contents__image__front,
-    &__contents__back {
-      height: 75vh;
-    }
-    &__contents__image__front {
-      background-position: center;
+    &__title__area {
+      margin-bottom: 10rem;
     }
   }
 
 
   .skill {
-    padding-bottom: 5rem;
+    padding: 12rem 0;
     &__area {
       display: flex;
       flex-direction: column;
-      margin-bottom: 15rem;
+      margin-bottom: 12rem;
     }
-    &__area:last-of-type {
+    &__title__area {
       margin-bottom: 10rem;
     }
     &__area:nth-child(odd) {
@@ -235,7 +308,7 @@ html {
       z-index: 2;
     }
     &__photo {
-      width: 80%;
+      width: 85%;
       display: inline;
       z-index: 2;
       box-shadow: -3px -3px 10px 1px #a8a8a8,
@@ -284,11 +357,19 @@ html {
       opacity: 1;
     }
   }
+
+  .contact {
+    padding: 12rem 0;
+    &__title__area {
+      margin-bottom: 10rem;
+    }
+  }
+
   .form {
     width: 100%;
     &__area {
       padding: 20% 2%;
-      width: 90%;
+      width: 85%;
     }
     &__required {
       font-size: 1rem;
@@ -317,10 +398,11 @@ html {
 
 // iPhoneXなど375px以下
 @media screen and (max-width: 376px) {
-  .profile {
-    height: 105vh;
+  .slider {
+    & &-slide  &-slide-content {
+      width: 97%;
+    }
   }
-
   .work {
     &__inner {
       width: 100%;
@@ -338,8 +420,8 @@ html {
       height: 50px;
     }
     &__submit__outer &__submit {
-      height: 40px;
       width: 215px;
+      height: 40px;
     }
   }
 }

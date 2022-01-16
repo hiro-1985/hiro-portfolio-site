@@ -44,6 +44,8 @@ $bg-color: #FAF9F5;
   justify-content: center;
   color: #fff;
   font-size: clamp(2.4rem, 3vw, 3.6rem);
+  letter-spacing: .07em;
+  line-height: 1.5;
 }
 
 @mixin work-contents-shadow {
@@ -59,3 +61,8 @@ $bg-color: #FAF9F5;
   border-radius: 80px / 4px;
 }
 
+@mixin background {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

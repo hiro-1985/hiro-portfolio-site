@@ -169,8 +169,7 @@ color: #626262;
       filter: hue-rotate(360deg);
     }
   }
-  &__menu__button,
-  &__delete__button {
+  &__menu__button {
     position: absolute;
     top: 25%;
     right: 5%;
@@ -205,28 +204,17 @@ color: #626262;
   }
   & &-slide  &-slide-content {
     position: absolute;
-    width: 40%;
+    width: 60%;
     height: 10%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     @include vm.slider-content();
+    pointer-events: none;
     transition: all 3s ease 0s;
-  }
-  &-slide-content span {
-    display: inline-block;
-    animation: texts-animate 3s backwards;
-  }
-  @keyframes texts-animate {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    padding: 5px;
   }
 }
-
 
 .modal {
   &__overlay {
@@ -258,17 +246,16 @@ color: #626262;
   }
   &__delete__button {
     background: none;
-    position: absolute;
-    top: 0;
-    right: 0;
     border: none;
-    border-radius: 50%;
     cursor: pointer;
   }
   &__delete__icon {
     font-size: clamp(2.4rem, 3vw, 3.2rem);
     background: none;
     color: #FAF9F5;
+  }
+  &__delete__icon:hover {
+    color: rgba(250, 249, 245, .7);
   }
   &__list {
     margin-bottom: 7rem;
@@ -284,7 +271,8 @@ color: #626262;
     transition: all .3s ease;
   }
   &__list__item:hover {
-    color: rgba(250, 249, 245, .7);
+    color: #eca7b1;
+    transition: all .3s ease;
   }
   &__sns__area {
     text-align: center;
@@ -301,7 +289,7 @@ color: #626262;
     transition: all .3s ease;
   }
   &__sns__icon:hover {
-    color: rgba(250, 249, 245, .7);
+    color: #eca7b1;
   }
 }
 
@@ -311,8 +299,7 @@ color: #626262;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 115vh;
-  padding: 10rem 1rem;
+  padding: 15rem 0;
   &__inner {
     width: 90%;
     margin: 0 auto;
@@ -346,9 +333,10 @@ color: #626262;
   border-radius: 30px;
   &__photo__area {
     grid-area: photo;
-    justify-self: center;
+    justify-self: right;
     width: 50%;
     max-width: 300px;
+    margin-right: 10%;
   }
   &__image {
     width: 90%;
@@ -360,7 +348,7 @@ color: #626262;
     align-self: center;
     width: 90%;
     font-family: vm.$font-family-no;
-    padding: 0 6%;
+    padding: 0 10% 0 2%;
   }
   &__title {
     text-align: center;
@@ -389,7 +377,7 @@ color: #626262;
   }
   &__greeting__area {
     grid-area: greeting;
-    width: 60%;
+    width: 65%;
     justify-self: center;
     padding: 1.5rem 0;
     font-family: vm.$font-family-no;
@@ -398,12 +386,14 @@ color: #626262;
   &__greeting__title {
     font-size: clamp(1.4rem, 1.8vw, 2.2rem);
     font-weight: 800;
+    text-align: center;
+    letter-spacing: .05em;
     margin-bottom: 2rem;
   }
   &__greeting {
     font-size: clamp(1.2rem, 1.6vw, 2rem);
     line-height: 1.6;
-    letter-spacing: 1.5px;
+    letter-spacing: .05em;
   }
 }
 
@@ -428,29 +418,14 @@ color: #626262;
   }
   &__contents {
     width: 100%;
-    height: 130vh;
     padding: 2% 5%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5%;
-    grid-row-gap: 5%;
+    grid-row-gap: 70px;
     place-items: center;
     justify-content: center;
-  }
-  &__contents__area {
-    position: relative;
-    width: 95%;
-    height: 50vh;
-    transform-style: preserve-3d;
-    perspective: 100%;
-    transition: .5s;
-  }
-  &__contents__area:hover &__contents__image__front {
-    transform: rotateX(-180deg);
-  }
-  &__contents__area:hover &__contents__back {
-    transform: rotateX(0deg);
   }
   &__image1 {
     background-image: url(../images/portfolio01_stylish_site.png);
@@ -465,42 +440,14 @@ color: #626262;
     background-image: url(../images/portfolio04_hiro_portfolio.png);
   }
   &__contents__image__front {
-    width: 100%;
-    height: 50vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    backface-visibility: hidden;
-    transform: rotateX(0deg);
-    transition: .5s;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    &::after {
-      @include vm.work-contents-shadow();
-    }
-  }
-  &__contents__back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh;
-    background-color: #EBF5FC;
-    backface-visibility: hidden;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: rotateX(180deg);
-    transition: .5s;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    &::after {
-      @include vm.work-contents-shadow();
-    }
+    @include vm.background();
   }
   &__contents__title,
   &__contents__description {
     font-family: vm.$font-family-no;
     color: vm.$text-color;
+    text-align: center;
+    margin: 0 auto;
     letter-spacing: .05em;
     line-height: 1.6;
   }
@@ -509,11 +456,13 @@ color: #626262;
   }
   &__contents__description {
     font-size: clamp(1.4vw, 2.2rem, 2.6vw);
+    text-align-last: left;
   }
   &__contents__link {
     display: block;
     width: 50%;
     padding: 3%;
+    margin: 0 auto;
     text-align: center;
     font-size: clamp(1.2vw, 2rem, 2.4vw);
     transition: all .2s;
@@ -530,7 +479,7 @@ color: #626262;
 
 .skill {
   background-color: vm.$bg-color;
-  padding: 10rem 0;
+  padding: 15rem 0;
   &__inner {
     max-width: 1440px;
     width: 97.5%;
@@ -550,8 +499,11 @@ color: #626262;
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
     width: 100%;
+  }
+  &__area:last-of-type {
+    margin-bottom: 0;
   }
   &__area:nth-child(odd) {
     flex-direction: row-reverse;
@@ -624,7 +576,7 @@ color: #626262;
 .contact {
   position: relative;
   background-color: #EBF5FC;
-  padding: 12rem 0;
+  padding: 15rem 0;
   &__inner {
     max-width: 1440px;
     margin: 0 auto;
@@ -646,7 +598,7 @@ color: #626262;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 8%;
+  margin-top: 10px;
 }
 #page-top {
   margin-right: 5%
