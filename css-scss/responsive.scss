@@ -124,20 +124,6 @@ html {
       height: auto;
       margin: 0 auto;
     }
-    &__image1 {
-      background-image: url(../images/portfolio01_stylish_site_sp.png);
-    }
-    &__image2 {
-      background-image: url(../images/portfolio02_corpolate_site_sp.png);
-      height: 25vh;
-    }
-    &__image3 {
-      background-image: url(../images/portfolio03_your_coding_sp.png);
-      height: 26vh;
-    }
-    &__image4 {
-      background-image: url(../images/portfolio04_hiro-portfolio_sp.png);
-    }
     &__contents__area:not(:last-of-type) {
       margin-bottom: 10%;
     }
@@ -174,12 +160,16 @@ html {
     }
   }
 
-  .form__required {
-    font-size: 1.2rem;
-  }
-
-  .form__alert {
-    font-size: 1.4rem;
+  .form {
+    &__required {
+      font-size: 1.2rem;
+    }
+    &__alert {
+      font-size: 1.4rem;
+    }
+    .end-message-side-note {
+      width: 75%;
+    }
   }
 
   .sns__text {
@@ -369,7 +359,7 @@ html {
     width: 100%;
     &__area {
       padding: 20% 2%;
-      width: 85%;
+      width: 90%;
     }
     &__required {
       font-size: 1rem;
@@ -383,6 +373,9 @@ html {
     }
     &__textarea__area {
       width: 100%;
+    }
+    .end-message-side-note {
+      width: 90%;
     }
   }
   .sns__text {

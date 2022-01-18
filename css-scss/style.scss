@@ -789,12 +789,21 @@ color: #626262;
       filter: hue-rotate(360deg);
     }
   }
-  .end-message,
-  .false-message {
+  .end-message {
     text-align: center;
-    font-size: clamp(1.4rem, 1.6vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.4rem);
     font-family: vm.$font-family-no;
     color: vm.$text-color;
+    display: none;
+  }
+  .end-message-side-note {
+    width: 65%;
+    text-align: center;
+    font-family: vm.$font-family-no;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    color: vm.$text-color;
+    margin: 10px auto;
     display: none;
   }
 }
