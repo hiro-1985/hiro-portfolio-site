@@ -110,6 +110,7 @@ $(function () {
       scrollTop: position
     }, speed, "swing");
     $(".modal, .modal__overlay").fadeOut(200);
+    $(".header__menu__button").fadeIn(200);
     return false;
   });
 }); 
