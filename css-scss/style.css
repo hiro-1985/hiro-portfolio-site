@@ -758,6 +758,7 @@ body {
 .form {
   width: 85%;
   margin: 0 auto;
+  /* Firefox */
 }
 .form__area {
   background-color: #EBF5FC;
@@ -847,7 +848,7 @@ body {
 }
 .form__textarea::-moz-placeholder {
   font-size: 1.6rem;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 .form__textarea:-ms-input-placeholder {
   font-size: 1.6rem;
@@ -962,6 +963,14 @@ body {
   100% {
     -webkit-filter: hue-rotate(360deg);
             filter: hue-rotate(360deg);
+  }
+}
+@-moz-document url-prefix() {
+  .form .form__textarea::-moz-placeholder {
+    opacity: 0.5;
+  }
+  .form .form__textarea::placeholder {
+    opacity: 0.5;
   }
 }
 .form .end-message {
