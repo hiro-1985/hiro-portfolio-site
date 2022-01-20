@@ -708,7 +708,6 @@ color: #626262;
   }
   &__textarea::placeholder {
     font-size: 1.6rem;
-    visibility: hidden;
     opacity: .8;
   }
   &__textarea:focus::placeholder {
