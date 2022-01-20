@@ -758,7 +758,6 @@ body {
 .form {
   width: 85%;
   margin: 0 auto;
-  /* Firefox */
 }
 .form__area {
   background-color: #EBF5FC;
@@ -965,14 +964,6 @@ body {
             filter: hue-rotate(360deg);
   }
 }
-@-moz-document url-prefix() {
-  .form .form__textarea::-moz-placeholder {
-    opacity: 0.5;
-  }
-  .form .form__textarea::placeholder {
-    opacity: 0.5;
-  }
-}
 .form .end-message {
   text-align: center;
   font-size: clamp(1.6rem, 2vw, 2.4rem);
@@ -1048,6 +1039,21 @@ iframe {
   font-family: "Noto Sans JP", sans-serif;
   color: #fff;
   letter-spacing: 0.05em;
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+  .slider-slide .slider-slide-content {
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .form__textarea::-moz-placeholder {
+    opacity: 0.4;
+  }
+
+  .form__textarea::placeholder {
+    opacity: 0.4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

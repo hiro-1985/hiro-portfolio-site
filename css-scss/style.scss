@@ -788,12 +788,6 @@ color: #626262;
       filter: hue-rotate(360deg);
     }
   }
-  /* Firefox */
-@-moz-document url-prefix() {
-  .form__textarea::placeholder {
-      opacity: .5;
-  }
-}
   .end-message {
     text-align: center;
     font-size: clamp(1.6rem, 2vw, 2.4rem);
@@ -865,3 +859,12 @@ iframe {display: none;}
 }
 
  
+/* Firefox */
+@-moz-document url-prefix() {
+  .slider-slide .slider-slide-content {
+    background-color: rgba(0, 0, 0, .08);
+  }
+  .form__textarea::placeholder {
+      opacity: .4;
+  }
+}
