@@ -91,13 +91,13 @@ $('#slider').vegas({
 // ハンバーガーメニューの表示⬇️
 $(function () {
   $(".header__menu__button").click(function() {
-    $(".modal, .modal__overlay").fadeIn(200);
-    $(".header__menu__button").fadeOut(200);
+    $(".modal, .modal__overlay").fadeIn(300);
+    $(".header__menu__button").fadeOut(300);
   });
 
   $(".header__delete__button, .modal__overlay").click(function() {
-    $(".modal, .modal__overlay").fadeOut(200);
-    $(".header__menu__button").fadeIn(200);
+    $(".modal, .modal__overlay").fadeOut(300);
+    $(".header__menu__button").fadeIn(300);
   });
 
   $('a[href^="#"]').click(function () {
@@ -109,8 +109,8 @@ $(function () {
     $("html, body").animate({
       scrollTop: position
     }, speed, "swing");
-    $(".modal, .modal__overlay").fadeOut(200);
-    $(".header__menu__button").fadeIn(200);
+    $(".modal, .modal__overlay").fadeOut(300);
+    $(".header__menu__button").fadeIn(300);
     return false;
   });
 }); 

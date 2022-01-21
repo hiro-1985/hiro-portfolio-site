@@ -111,6 +111,7 @@ color: #626262;
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 10;
   }
   &__outer {
     position: relative;
@@ -176,12 +177,14 @@ color: #626262;
     background: none;
     border: none;
     display: none;
+    transition: all .3s;
   }
   &__menu__bar,
   &__delete__icon {
     font-size: 5rem;
     color: #fff;
     cursor: pointer;
+    transition: all .3s;
   }
 }
 
