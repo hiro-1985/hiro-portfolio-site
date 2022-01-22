@@ -57,7 +57,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 45vh;
     background-color: #EBF5FC;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -145,6 +145,7 @@ html {
   }
   .work__contents {
     grid-template-columns: 1fr;
+    grid-row-gap: 25px;
   }
   .work__title__area {
     margin-bottom: 13rem;

@@ -426,7 +426,7 @@ color: #626262;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5%;
-    grid-row-gap: 70px;
+    grid-row-gap: 100px;
     place-items: center;
     justify-content: center;
   }
@@ -455,10 +455,10 @@ color: #626262;
     line-height: 1.6;
   }
   &__contents__title {
-    font-size: clamp(2.2vw, 3.2rem, 3.4vw);
+    font-size: clamp(2.2rem, 3.2vw, 3.4rem);
   }
   &__contents__description {
-    font-size: clamp(1.4vw, 2.2rem, 2.6vw);
+    font-size: clamp(1.4rem, 2.2vw, 2.6rem);
     text-align-last: left;
   }
   &__contents__link {
@@ -467,7 +467,7 @@ color: #626262;
     padding: 3%;
     margin: 0 auto;
     text-align: center;
-    font-size: clamp(1.2vw, 2rem, 2.4vw);
+    font-size: clamp(1.8rem, 2.4vw, 2.8rem);
     transition: all .2s;
     &:hover {
       cursor: pointer;
