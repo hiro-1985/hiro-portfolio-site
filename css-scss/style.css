@@ -516,7 +516,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5%;
-  grid-row-gap: 100px;
+  grid-row-gap: 150px;
   place-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -548,10 +548,10 @@ body {
   line-height: 1.6;
 }
 .work__contents__title {
-  font-size: clamp(2.2rem, 3.2vw, 3.4rem);
+  font-size: clamp(2rem, 3vw, 3.2rem);
 }
 .work__contents__description {
-  font-size: clamp(1.4rem, 2.2vw, 2.6rem);
+  font-size: clamp(1.2rem, 2vw, 2.4rem);
   -moz-text-align-last: left;
        text-align-last: left;
 }
