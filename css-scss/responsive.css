@@ -57,7 +57,9 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 450px;
     height: 45vh;
+    min-height: 350px;
     background-color: #EBF5FC;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -230,8 +232,7 @@ html {
   .slider .slider-slide .slider-slide-content {
     width: 85%;
   }
-
-  .Android .slider .slider-slide .slider-slide-content {
+  .slider .Android .slider .slider-slide-content {
     font-size: 40px;
   }
 
