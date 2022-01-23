@@ -352,7 +352,7 @@ html {
   .skill__contents__title__sp {
     display: block;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: clamp(3.6rem, 3vh, 4.8rem);
+    font-size: 3.2rem;
     font-weight: bold;
     text-align: center;
     margin-bottom: 10%;
