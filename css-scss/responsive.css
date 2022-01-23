@@ -220,6 +220,9 @@ html {
     width: 115px;
     height: 65px;
   }
+  .header__nav__link {
+    font-size: 2.2rem;
+  }
 
   .slider-wrapper {
     width: 100%;
@@ -231,9 +234,17 @@ html {
   }
   .slider .slider-slide .slider-slide-content {
     width: 85%;
+    font-size: 2.4rem;
   }
-  .slider .Android .slider .slider-slide-content {
-    font-size: 40px;
+
+  .modal__title {
+    font-size: 3.6rem;
+  }
+  .modal__delete__icon {
+    font-size: 2.4rem;
+  }
+  .modal__list__item {
+    font-size: 2rem;
   }
 
   .profile {
@@ -271,9 +282,15 @@ html {
     width: 100%;
     padding: 0 3%;
   }
+  .self-intro__title {
+    font-size: 2rem;
+  }
   .self-intro__greeting__area {
     width: 75%;
     justify-self: center;
+  }
+  .self-intro__dl {
+    font-size: 1.2rem;
   }
   .self-intro__dt {
     width: 50%;
@@ -284,6 +301,12 @@ html {
     width: 50%;
     padding-left: 2%;
   }
+  .self-intro__greeting__title {
+    font-size: 1.4rem;
+  }
+  .self-intro__greeting {
+    font-size: 1.2rem;
+  }
 
   .work {
     padding: 12rem 0 0 0;
@@ -293,6 +316,15 @@ html {
   }
   .work__title__area {
     margin-bottom: 10rem;
+  }
+  .work__contents__title {
+    font-size: 2.2rem;
+  }
+  .work__contents__description {
+    font-size: 1.4rem;
+  }
+  .work__contents__link {
+    font-size: 1.8rem;
   }
 
   .skill {
@@ -384,6 +416,9 @@ html {
     padding: 2rem 1.5rem;
     opacity: 1;
   }
+  .skill__text {
+    font-size: 1.6rem;
+  }
 
   .contact {
     padding: 12rem 0;
@@ -411,6 +446,9 @@ html {
   }
   .form__textarea__area {
     width: 100%;
+  }
+  .form .end-message {
+    font-size: 1.6rem;
   }
   .form .end-message-side-note {
     width: 90%;
