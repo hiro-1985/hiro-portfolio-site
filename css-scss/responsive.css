@@ -231,6 +231,10 @@ html {
     width: 85%;
   }
 
+  .Android .slider .slider-slide .slider-slide-content {
+    font-size: 40px;
+  }
+
   .profile {
     background-size: 275%;
     background-position: 0 0;

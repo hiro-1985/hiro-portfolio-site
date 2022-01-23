@@ -1,4 +1,10 @@
 
+if (navigator.userAgent.indexOf('Android') > 0) {
+  let body = document.getElementsByTagName('body')[0];
+  body.classList.add('Android');
+}
+
+
 // ローディング画面（動くWebデザインアイディア帳より参考）⬇️
 var bar = new ProgressBar.Line(splash_text, {//id名を指定
 	easing: 'easeInOut',//アニメーション効果linear、easeIn、easeOut、easeInOutが指定可能
