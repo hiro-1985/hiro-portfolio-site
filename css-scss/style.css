@@ -657,14 +657,14 @@ body {
   color: #333;
 }
 .skill__text__area {
-  width: 40%;
+  width: 50%;
   font-family: "Noto Sans JP", sans-serif;
   -ms-flex-item-align: center;
       align-self: center;
   z-index: 2;
 }
 .skill__inner > .skill__area:nth-of-type(2n) > .skill__text__area {
-  margin-left: -12.5rem;
+  margin-left: -13.5rem;
 }
 .skill__inner > .skill__area:nth-of-type(2n-1) > .skill__text__area {
   margin-right: -10rem;
@@ -681,11 +681,16 @@ body {
 }
 .skill__text-box {
   width: 100%;
-  padding: 2rem 3rem;
   background-color: #3c3c3c;
   opacity: 0.6;
   border-radius: 20px;
   text-align: left;
+}
+.skill__inner > .skill__area:nth-of-type(2n-1) > .skill__text__area > .skill__text-box {
+  padding: 2rem 8rem 2rem 3rem;
+}
+.skill__inner > .skill__area:nth-of-type(2n) > .skill__text__area > .skill__text-box {
+  padding: 2rem 3rem 2rem 8rem;
 }
 .skill__text {
   font-size: clamp(1.6rem, 1.5vw, 3.2rem);

@@ -539,13 +539,13 @@ color: #626262;
     color: #333;
   }
   &__text__area {
-    width: 40%;
+    width: 50%;
     font-family: vm.$font-family-no;
     align-self: center;
     z-index: 2;
   }
   &__inner > &__area:nth-of-type(2n) > &__text__area {
-    margin-left: -12.5rem;
+    margin-left: -13.5rem;
   }
   &__inner > &__area:nth-of-type(2n-1) > &__text__area {
     margin-right: -10rem;
@@ -561,11 +561,16 @@ color: #626262;
   }
   &__text-box {
     width: 100%;
-    padding: 2rem 3rem;
     background-color: #3c3c3c;
     opacity: 0.6;
     border-radius: 20px;
     text-align: left;
+  }
+  &__inner > &__area:nth-of-type(2n-1) > &__text__area > &__text-box {
+    padding: 2rem 8rem 2rem 3rem;
+  }
+  &__inner > &__area:nth-of-type(2n) > &__text__area > &__text-box {
+    padding: 2rem 3rem 2rem 8rem;
   }
   &__text {
     font-size: clamp(1.6rem, 1.5vw, 3.2rem);
