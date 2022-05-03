@@ -52,6 +52,12 @@ html {
     background-color: transparent;
     border-radius: 80px/4px;
   }
+  .work__image5 {
+    width: 100%;
+    min-width: 450px;
+    height: 40vh;
+    min-height: 250px;
+  }
   .work__contents__back {
     position: absolute;
     top: 0;
@@ -159,6 +165,12 @@ html {
     background-position: center;
     background-repeat: no-repeat;
   }
+  .work__image5 {
+    width: 100%;
+    min-width: 450px;
+    height: 40vh;
+    min-height: 250px;
+  }
   .work__contents__back {
     width: 100%;
     height: auto;
@@ -175,6 +187,10 @@ html {
   }
   .work__contents__description {
     width: 80%;
+  }
+  .work__password {
+    width: 80%;
+    margin: 5px auto;
   }
 
   .skill__title__area {
@@ -317,11 +333,26 @@ html {
   .work__title__area {
     margin-bottom: 10rem;
   }
+  .work__caution {
+    font-size: 10px;
+  }
   .work__contents__title {
     font-size: 2.2rem;
   }
+  .work__image5 {
+    width: 100%;
+    min-width: 250px;
+    height: 30vh;
+    min-height: 250px;
+  }
+  .work__comingSoon {
+    font-size: 12px;
+  }
   .work__contents__description {
     font-size: 1.4rem;
+  }
+  .work__password {
+    font-size: 10px;
   }
   .work__contents__link {
     font-size: 1.8rem;
@@ -349,17 +380,6 @@ html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .skill__contents__title__sp {
-    display: block;
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 3.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10%;
-  }
-  .skill__area:last-of-type .skill__contents__title__sp {
-    opacity: 0.3;
-  }
   .skill__photo__area {
     width: 85%;
     margin: 0 auto;
@@ -375,6 +395,15 @@ html {
   .skill__inner > .skill__area:nth-of-type(2n-1) .skill__photo__area > .skill__photo {
     -webkit-box-shadow: -3px -3px 10px 1px #a8a8a8, 3px 3px 10px 1px #a8a8a8;
             box-shadow: -3px -3px 10px 1px #a8a8a8, 3px 3px 10px 1px #a8a8a8;
+  }
+  .skill__contents__title__sp {
+    display: block;
+    opacity: 1;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10%;
   }
   .skill__photo__text {
     position: absolute;
@@ -413,8 +442,13 @@ html {
   .skill__text-box {
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-    padding: 2rem 1.5rem;
     opacity: 1;
+  }
+  .skill__inner > .skill__area:nth-of-type(2n-1) > .skill__text__area > .skill__text-box {
+    padding: 2rem 1.5rem;
+  }
+  .skill__inner > .skill__area:nth-of-type(2n) > .skill__text__area > .skill__text-box {
+    padding: 2rem 1.5rem;
   }
   .skill__text {
     font-size: 1.6rem;
@@ -463,6 +497,15 @@ html {
 .skill__title::before,
 .contact__title::before {
     font-size: 7rem;
+  }
+
+  .notice__title {
+    font-size: 2.4rem;
+  }
+  .notice__text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
   }
 }
 @media screen and (max-width: 376px) {

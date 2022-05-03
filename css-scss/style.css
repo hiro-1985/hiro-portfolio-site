@@ -509,6 +509,13 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+.work__caution {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: #444;
+  margin: 15px 0;
+}
 .work__contents {
   width: 100%;
   padding: 2% 5%;
@@ -532,7 +539,26 @@ body {
   background-image: url(../images/portfolio03_your_coding.png);
 }
 .work__image4 {
-  background-image: url(../images/portfolio04_hiro_portfolio.png);
+  background-image: url(../images/portfolio04_ishiikadan.jpg);
+}
+.work__image5 {
+  background-image: url(../images/hiro_portfolio.png);
+}
+.work__image5__area {
+  position: relative;
+}
+.work__comingSoon {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 3px 3px 5px #fff;
+  line-height: 1.6;
 }
 .work__contents__image__front {
   background-size: contain;
@@ -542,7 +568,7 @@ body {
 .work__contents__title, .work__contents__description {
   font-family: "Noto Sans JP", sans-serif;
   color: #626262;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   letter-spacing: 0.05em;
   line-height: 1.6;
@@ -554,6 +580,11 @@ body {
   font-size: clamp(1.2rem, 2vw, 2.4rem);
   -moz-text-align-last: left;
        text-align-last: left;
+}
+.work__password {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 5px 0;
 }
 .work__contents__link {
   display: block;
@@ -669,7 +700,7 @@ body {
 .skill__inner > .skill__area:nth-of-type(2n-1) > .skill__text__area {
   margin-right: -10rem;
 }
-.skill__area:last-of-type .skill__photo {
+.skill__area:nth-last-of-type(-n+2) .skill__photo {
   -webkit-filter: opacity(30%);
           filter: opacity(30%);
 }
@@ -994,6 +1025,21 @@ body {
 
 iframe {
   display: none;
+}
+
+.notice {
+  padding: 7% 3%;
+}
+.notice__title {
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 2% 0;
+}
+.notice__text {
+  font-size: 2rem;
+  padding: 2% 0;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
 }
 
 .sns {

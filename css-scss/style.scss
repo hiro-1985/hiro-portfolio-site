@@ -419,6 +419,13 @@ color: #626262;
     content: "WORK";
     @include vm.section-title-en;
   }
+  &__caution {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: .05em;
+    color: #444;
+    margin: 15px 0;
+  }
   &__contents {
     width: 100%;
     padding: 2% 5%;
@@ -440,7 +447,25 @@ color: #626262;
     background-image: url(../images/portfolio03_your_coding.png);
   }
   &__image4 {
-    background-image: url(../images/portfolio04_hiro_portfolio.png);
+    background-image: url(../images/portfolio04_ishiikadan.jpg);
+  }
+  &__image5 {
+    background-image: url(../images/hiro_portfolio.png);
+  }
+  &__image5__area {
+    position: relative;
+  }
+  &__comingSoon {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 3px 3px 5px #fff;
+    line-height: 1.6;
   }
   &__contents__image__front {
     @include vm.background();
@@ -449,7 +474,7 @@ color: #626262;
   &__contents__description {
     font-family: vm.$font-family-no;
     color: vm.$text-color;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     letter-spacing: .05em;
     line-height: 1.6;
@@ -460,6 +485,11 @@ color: #626262;
   &__contents__description {
     font-size: clamp(1.2rem, 2vw, 2.4rem);
     text-align-last: left;
+  }
+  &__password {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 5px 0;
   }
   &__contents__link {
     display: block;
@@ -550,7 +580,7 @@ color: #626262;
   &__inner > &__area:nth-of-type(2n-1) > &__text__area {
     margin-right: -10rem;
   }
-  &__area:last-of-type &__photo {
+  &__area:nth-last-of-type(-n+2) &__photo {
     filter: opacity(30%);
   }
   &__contents__title {
@@ -816,6 +846,21 @@ color: #626262;
 }
 
 iframe {display: none;}
+
+.notice {
+  padding: 7% 3%;
+  &__title {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 2% 0;
+  }
+  &__text {
+    font-size: 2rem;
+    padding: 2% 0;
+    line-height: 1.8;
+    letter-spacing: .06em;
+  }
+}
 
 .sns {
   text-align: center;

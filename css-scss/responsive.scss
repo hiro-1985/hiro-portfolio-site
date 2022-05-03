@@ -35,6 +35,12 @@ html {
         @include vm.work-contents-shadow();
       }
     }
+    &__image5 {
+      width: 100%;
+      min-width: 450px;
+      height: 40vh;
+      min-height: 250px;
+    }
     &__contents__back {
       position: absolute;
       top: 0;
@@ -122,6 +128,12 @@ html {
       height: 30vh;
       @include vm.background();
     }
+    &__image5 {
+      width: 100%;
+      min-width: 450px;
+      height: 40vh;
+      min-height: 250px;
+    }
     &__contents__back {
       width: 100%;
       height: auto;
@@ -138,6 +150,10 @@ html {
     }
     &__contents__description {
       width: 80%;
+    }
+    &__password {
+      width: 80%;
+      margin: 5px auto;
     }
   }
 
@@ -296,11 +312,26 @@ html {
     &__title__area {
       margin-bottom: 10rem;
     }
+    &__caution {
+      font-size: 10px;
+    }
     &__contents__title {
       font-size: 2.2rem;
     }
+    &__image5 {
+      width: 100%;
+      min-width: 250px;
+      height: 30vh;
+      min-height: 250px;
+    }
+    &__comingSoon {
+      font-size: 12px;
+    }
     &__contents__description {
       font-size: 1.4rem; 
+    }
+    &__password {
+      font-size: 10px;
     }
     &__contents__link {
       font-size: 1.8rem;
@@ -321,17 +352,8 @@ html {
     &__area:nth-child(odd) {
       flex-direction: column;
     }
-    &__contents__title__sp {
-      display: block;
-      font-family: vm.$font-family-no;
-      font-size: 3.2rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 10%;
-    }
-    &__area:last-of-type &__contents__title__sp {
-      opacity: .3;
-    }
+    
+
     &__photo__area {
       width: 85%;
       margin: 0 auto;
@@ -347,6 +369,15 @@ html {
     &__inner > &__area:nth-of-type(2n-1) &__photo__area > &__photo {
       box-shadow: -3px -3px 10px 1px #a8a8a8,
                   3px 3px 10px 1px #a8a8a8;
+    }
+    &__contents__title__sp {
+      display: block;
+      opacity: 1;
+      font-family: vm.$font-family-no;
+      font-size: 3.2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 10%;
     }
     &__photo__text {
       position: absolute;
@@ -383,8 +414,13 @@ html {
     }
      &__text-box {
       backdrop-filter: blur(10px);
-      padding: 2rem 1.5rem;
       opacity: 1;
+    }
+    &__inner > &__area:nth-of-type(2n-1) > &__text__area > &__text-box {
+      padding: 2rem 1.5rem;
+    }
+    &__inner > &__area:nth-of-type(2n) > &__text__area > &__text-box {
+      padding: 2rem 1.5rem;
     }
     &__text {
       font-size: 1.6rem;
@@ -432,6 +468,18 @@ html {
   .skill__title::before,
   .contact__title::before {
     font-size: 7rem;
+  }
+
+
+  .notice {
+    &__title {
+      font-size: 2.4rem;
+    }
+    &__text {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      letter-spacing: .05em;
+    }
   }
 }
 
