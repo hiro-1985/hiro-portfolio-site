@@ -580,7 +580,7 @@ color: #626262;
   &__inner > &__area:nth-of-type(2n-1) > &__text__area {
     margin-right: -10rem;
   }
-  &__area:nth-last-of-type(-n+2) &__photo {
+  &__area:nth-of-type(5) &__photo {
     filter: opacity(30%);
   }
   &__contents__title {
