@@ -480,8 +480,17 @@ body {
 }
 
 .work {
+  position: relative;
   background-color: #FAF9F5;
   padding: 15rem 0;
+}
+.work::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 150vw solid rgba(81, 198, 244, 0.08);
+  border-left: 100vw solid transparent;
 }
 .work__inner {
   max-width: 1440px;
@@ -608,8 +617,18 @@ body {
 }
 
 .skill {
+  position: relative;
   background-color: #FAF9F5;
   padding: 15rem 0;
+  overflow: hidden;
+}
+.skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 250vw solid rgba(81, 198, 244, 0.08);
+  border-right: 100vw solid transparent;
 }
 .skill__inner {
   max-width: 1440px;
@@ -663,7 +682,6 @@ body {
 .skill__photo__area {
   position: relative;
   width: 50%;
-  border-radius: 20px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: block;

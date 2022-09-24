@@ -326,6 +326,16 @@ html {
 
   .work {
     padding: 12rem 0 0 0;
+    background-color: transparent;
+  }
+  .work::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 775vw solid rgba(81, 198, 244, 0.08);
+    border-left: 100vw solid transparent;
+    z-index: -1;
   }
   .work__inner {
     width: 90%;
@@ -360,6 +370,15 @@ html {
 
   .skill {
     padding: 12rem 0;
+    background-color: white;
+  }
+  .skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 775vw solid rgba(81, 198, 244, 0.08);
+    border-right: 100vw solid transparent;
   }
   .skill__area {
     display: -webkit-box;
