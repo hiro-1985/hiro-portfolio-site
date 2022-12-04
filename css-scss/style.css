@@ -556,6 +556,9 @@ body {
 .work__image5__area {
   position: relative;
 }
+.work__image6 {
+  background-image: url(../images/portfolio06_catbell.png);
+}
 .work__comingSoon {
   width: 100%;
   text-align: center;
@@ -717,10 +720,6 @@ body {
 }
 .skill__inner > .skill__area:nth-of-type(2n-1) > .skill__text__area {
   margin-right: -10rem;
-}
-.skill__area:nth-of-type(5) .skill__photo {
-  -webkit-filter: opacity(30%);
-          filter: opacity(30%);
 }
 .skill__contents__title {
   font-size: 4.8rem;

@@ -464,6 +464,9 @@ color: #626262;
   &__image5__area {
     position: relative;
   }
+  &__image6 {
+    background-image: url(../images/portfolio06_catbell.png);
+  }
   &__comingSoon {
     width: 100%;
     text-align: center;
@@ -597,9 +600,6 @@ color: #626262;
   }
   &__inner > &__area:nth-of-type(2n-1) > &__text__area {
     margin-right: -10rem;
-  }
-  &__area:nth-of-type(5) &__photo {
-    filter: opacity(30%);
   }
   &__contents__title {
     font-size: 4.8rem;
