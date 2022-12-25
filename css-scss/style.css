@@ -550,14 +550,17 @@ body {
 .work__image4 {
   background-image: url(../images/portfolio04_ishiikadan.jpg);
 }
+.work__image6 {
+  background-image: url(../images/portfolio06_catbell.png);
+}
+.work__image7 {
+  background-image: url(../images/portfolio07_komugi.png);
+}
 .work__image5 {
   background-image: url(../images/hiro_portfolio.png);
 }
 .work__image5__area {
   position: relative;
-}
-.work__image6 {
-  background-image: url(../images/portfolio06_catbell.png);
 }
 .work__comingSoon {
   width: 100%;
