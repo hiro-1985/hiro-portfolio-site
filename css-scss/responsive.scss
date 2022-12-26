@@ -119,6 +119,7 @@ html {
     &__contents {
       grid-template-columns: 1fr;
       grid-row-gap: 25px;
+      padding-bottom: 35px;
     }
     &__title__area {
       margin-bottom: 13rem;
@@ -131,8 +132,8 @@ html {
     &__image5 {
       width: 100%;
       min-width: 450px;
-      height: 40vh;
-      min-height: 250px;
+      // height: 40vh;
+      // min-height: 250px;
     }
     &__contents__back {
       width: 100%;
@@ -312,7 +313,7 @@ html {
       position: absolute;
       top: 0;
       right: 0;
-      border-top: 775vw solid rgba(81, 198, 244, 0.08);
+      border-top: 980vw solid rgba(81, 198, 244, 0.08);
       border-left: 100vw solid transparent;
       z-index: -1;
     }
@@ -321,6 +322,7 @@ html {
     }
     &__title__area {
       margin-bottom: 10rem;
+      padding: 0 3px;
     }
     &__caution {
       font-size: 10px;
@@ -331,8 +333,8 @@ html {
     &__image5 {
       width: 100%;
       min-width: 250px;
-      height: 30vh;
-      min-height: 250px;
+      // height: 30vh;
+      // min-height: 250px;
     }
     &__comingSoon {
       font-size: 12px;

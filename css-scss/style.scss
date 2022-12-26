@@ -446,6 +446,9 @@ color: #626262;
     place-items: center;
     justify-content: center;
   }
+  &__contents__area {
+    width: 100%;
+  }
   &__image1 {
     background-image: url(../images/portfolio01_stylish_site.png);
   }

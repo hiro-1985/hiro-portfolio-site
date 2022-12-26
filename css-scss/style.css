@@ -538,6 +538,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.work__contents__area {
+  width: 100%;
+}
 .work__image1 {
   background-image: url(../images/portfolio01_stylish_site.png);
 }
